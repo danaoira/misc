@@ -22,8 +22,8 @@ max_num = 7			# max int value (see outline above)
 def create_items(alpha):
 	items = []
 	for i in alpha:
-		for j in range(1, random.randint(5, max_num + 1)):	# range [1, 5-8) = [1, 4-7] ; upperbound is non-inclusive
-			val = i + str(j)			# val = 'C1', 'C2', etc
+		for j in range(1, random.randint(5, max_num + 1)):	# upperbound is non-inclusive: range [1, 5-8) = [1, 4-7]
+			val = i + str(j)								# val = 'C1', 'C2', etc
 			items.append(val)
 	random.shuffle(items)
 	return items
