@@ -1,7 +1,7 @@
 # Project:		Clockwork Wars Cleanup
 # Description:	A greedy sort to simulate the tile cleanup for the Clockwork Wars board game.
 # Input:		A randomized list of alphanumeric values.
-# Output:		A matrix of alphanumeric values sorted by.
+# Output:		A matrix of values sorted alphanumerically by column.
 # Creator:		Dana Oira Toribio
 # Duration:		8/6/2016 - 8/7/2016
 
