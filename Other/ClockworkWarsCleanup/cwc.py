@@ -1,7 +1,7 @@
 # Project:		Clockwork Wars Cleanup
 # Description:	A greedy sort to simulate the tile cleanup for the Clockwork Wars board game.
 # Input:		A randomized list of alphanumeric values.
-# Output:		A sorted list of alphanumeric values in a matrix.
+# Output:		A matrix of alphanumeric values sorted by.
 # Creator:		Dana Oira Toribio
 # Duration:		8/6/2016 - 8/7/2016
 
@@ -28,7 +28,7 @@ def create_items(alpha):
 	random.shuffle(items)
 	return items
 
-def create_matrix(row, col):
+def create_matrix(col, row):
 	return [['  ' for x in range(col)] for y in range(row)]
 
 def write_result(val, is_matrix):
@@ -41,7 +41,7 @@ def write_result(val, is_matrix):
 def update_result(items):
 	for i in items:			# ex. i = C2
 		f.write('\n\nRound ' + str(items.index(i) + 1) + ' (' + str(i) + ')\n')
-		result[int(i[1]) - 1][alpha.index(i[0])] = i	# ex. result[1][0] = C2
+		result[int(i[1]) - 1][alpha.index(i[0])] = i
 		write_result(result, True)
 
 print('Running Clockworks Wars Cleanup')
