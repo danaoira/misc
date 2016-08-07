@@ -8,7 +8,7 @@
 # Outline:
 	# Value generation
 		# Values: V1-V7, C1-C7, L1-L7, F1-F7, T1-T7, M1-M7, S1-S7
-		# RegEx: [(C|F|L|M|S|T|V)(1-7)]
+		# RegEx: [(C|F|L|M|S|T|V)(1-4|1-7)]
 	# Randomize values
 	# Place values into matrix
 	# Print results to file
@@ -17,12 +17,12 @@ import random
 
 f = open('results.txt', 'w')
 alpha = ['C', 'F', 'L', 'M', 'S', 'T', 'V']
-num = 7			# max int value (see outline above)
+max_num = 7			# max int value (see outline above)
 
 def create_items(alpha):
 	items = []
 	for i in alpha:
-		for j in range(1, num + 1):		# range(1, 8) = 1-7
+		for j in range(1, random.randint(5, max_num + 1)):		# range [1, 5-8) = [1, 4-7] ; range upperbound is non-inclusive
 			val = i + str(j)			# val = 'C1', 'C2', etc
 			items.append(val)
 	random.shuffle(items)
@@ -46,14 +46,14 @@ def update_result(items):
 
 print('Running Clockworks Wars Cleanup')
 
-print('... created randomized list')
+print('... creating randomized list')
 items = create_items(alpha)
 write_result(items, False)
 
-print('... created matrix')
-result = create_matrix(len(alpha), num)			# result = create_matrix(7, 7)
+print('... creating matrix')
+result = create_matrix(len(alpha), max_num)			# result = create_matrix(7, 7)
 
-print('... updated result')
+print('... populating matrix')
 update_result(items)
 
 print('... completed result for ' + str(len(items)) + ' items')
