@@ -1,6 +1,6 @@
 # Project: 		Clockwork Wars Cleanup
 # Description: 	A greedy sort to simulate the tile cleanup for the Clockwork Wars board game.
-# Input: 		A randomized list of alphanumeric values.
+# Input: 		A unsorted list of alphanumeric values.
 # Output:		A sorted list of alphanumeric values in a matrix.
 # Programmer:	Dana Oira Toribio
 # Duration:		8/6/2016 - 8/6/2016
@@ -15,47 +15,44 @@
 
 import random
 
+f = open('results.txt', 'w')
 alpha = ['C', 'F', 'L', 'M', 'S', 'T', 'V']
 
-def create_tiles(alpha):
-	tiles = []
+def create_items(alpha):
+	items = []
 	for i in alpha:
 		for j in range(1, 8):
-			val = i + str(j)
-			tiles.append(val)
-	random.shuffle(tiles)
-	return tiles
+			val = i + str(j)	# => 'C1', 'C2', etc
+			items.append(val)
+	random.shuffle(items)
+	return items
 
 def create_matrix(row, col):
 	return [['  ' for x in range(col)] for y in range(row)]
 
-def write_input(f, val):
-	f.write(str(val) + '\n\n')
+def write_result(val, is_matrix):
+	if is_matrix == False:
+		f.write(str(val))
+	elif is_matrix == True:	
+		for i in val:
+			f.write('\n' + str(i))
 
-def write_result(res):
-	for i in res:
-		f.write(str(i) + '\n')
-	f.write('\n')
-
-def update_result(tiles):
-	for i in tiles:
-		f.write('Round ' + str(tiles.index(i) + 1) + ' (' + str(i) + ')\n')
-		result[int(i[1]) - 1][alpha.index(i[0])] = i
-		write_result(result)
-
-f = open('results.txt', 'w')
+def update_result(items):
+	for i in items:
+		f.write('\n\nRound ' + str(items.index(i) + 1) + ' (' + str(i) + ')\n')
+		result[int(i[1]) - 1][alpha.index(i[0])] = i	# ex. result[0][0] = C1
+		write_result(result, True)
 
 print('Running Clockworks Wars Cleanup')
 
-print('... creating randomized list')
-tiles = create_tiles(alpha)
-write_input(f, tiles)
+print('... created unsorted list')
+items = create_items(alpha)
+write_result(items, False)
 
-print('... creating matrix')
+print('... created matrix')
 result = create_matrix(7, 7)
 
-print('... updating result')
-write_result(result)
-update_result(tiles)
+print('... updated result')
+update_result(items)
 
-print('... completed result for ' + str(len(tiles)) + ' tiles')
+print('... completed result for ' + str(len(items)) + ' items')
