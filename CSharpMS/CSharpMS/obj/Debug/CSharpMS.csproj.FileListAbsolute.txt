@@ -1,0 +1,6 @@
+C:\Users\Dana\Documents\GitHub\Tutorials\CSharpMS\CSharpMS\bin\Debug\CSharpMS.exe.config
+C:\Users\Dana\Documents\GitHub\Tutorials\CSharpMS\CSharpMS\bin\Debug\CSharpMS.exe
+C:\Users\Dana\Documents\GitHub\Tutorials\CSharpMS\CSharpMS\bin\Debug\CSharpMS.pdb
+C:\Users\Dana\Documents\GitHub\Tutorials\CSharpMS\CSharpMS\obj\Debug\CSharpMS.exe
+C:\Users\Dana\Documents\GitHub\Tutorials\CSharpMS\CSharpMS\obj\Debug\CSharpMS.pdb
+C:\Users\Dana\Documents\GitHub\Tutorials\CSharpMS\CSharpMS\obj\Debug\CSharpMS.csprojResolveAssemblyReference.cache
