@@ -20,10 +20,13 @@ def is_same_location(a, b):
 # check if distance decreases
 def is_dist_decr(x1, v1, x2, v2):
 	if (x1 > x2) and (v1 > v2):
+		print('a')
 		return False
 	elif (x2 > x1) and (v2 > v1):
+		print('b')
 		return False
 	else:
+		print('c')
 		return True
 
 # set locations
