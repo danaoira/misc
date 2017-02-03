@@ -1,4 +1,0 @@
-- mutation: alteration of an organism's genetic code
-- nonsense mutationL: protein rarely able to do original task
-- in-frame mutation: # of mutations is divided by 3, the codons will read correctly
-- frame-shift mutation: # of codon mutations not divisible by 3, so codons after insertion are garbled
