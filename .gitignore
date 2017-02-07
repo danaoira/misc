@@ -1,0 +1,16 @@
+DBPractice/DBPractice/DBPractice/Properties/Settings.settings
+DBPractice/DBPractice/.vs/DBPractice/v14/.suo
+*.config
+DBPractice/DBPractice/DBPractice.sln
+DBPractice/DBPractice/DBPractice/bin/Debug/DBPractice.vshost.exe
+*.manifest
+DBPractice/DBPractice/DBPractice/DBPractice.csproj
+*.cs
+DBPractice/DBPractice/DBPractice/obj/Debug/DBPractice.csproj.FileListAbsolute.txt
+*.cache
+*.resx
+DSFS/07-hypothesis-inference/.ipynb_checkpoints/Untitled-checkpoint.ipynb
+DSFS/07-hypothesis-inference/Untitled.ipynb
+Workshops/.ipynb_checkpoints/Untitled-checkpoint.ipynb
+Workshops/WomenInBigData.txt
+Workshops/Untitled.ipynb
