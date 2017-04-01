@@ -1,0 +1,4 @@
+// Test
+digraph {
+	A [label=Hello]
+}

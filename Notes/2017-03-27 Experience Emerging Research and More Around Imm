@@ -1,0 +1,57 @@
+# Experience Emerging Research and More Around Immersive Analytics
+
+- Host: ACM SF Bay Area Professional Chapter
+
+## Welcome
+- March 27 @ eBay
+- October Data Science Camp
+- February 28, DSSIG Meeting
+- PDS (Professional Development Seminar): NVIDIA, April 2017
+- March 23rd: Science Fair Santa Clara Valley
+- Tomorrow: SIGGRAPH Meeting
+
+## Presentation
+
+- Qlik Q, Immersive Analytics
+- First ACM event in 1992 (The Cave)
+	- VR room system
+- Collaboration
+	- Offline (Async)
+	- Inline (Co-located)
+	- Online (Remote)
+- Challenges on acting on complex data
+	- Losing sense of the whole
+	- Generalizing beyond known facts
+	- Limited ability to share insights
+- Collboration
+	- Key Principles
+		- Organize
+		- Share (PRomote, Discuss, Annotate)
+	- Inform (Alerts, Tasks)
+	- Report
+	- Social
+- Proposition: Turn analytics inside out
+	- Become platform agnostic
+- Solution:
+	- Immersive Analytics
+	- Engaging
+	- Persistent
+	- Info-Rich
+	- Interactive
+	- Collaborative
+- Building your DW WOrld Architecture
+	- Data -> Design -> Rendering and Interaction Engine -> Data World
+	- Data -> Analytics <-> Rendering & Interaction Engine
+- Immersion
+	- Sensorial/Cognitive
+	- Social
+		- Reporting = Sharing
+		- * Storytelling w/ the intent of collab
+			- Sharing info w/ intent of building communal knowledge
+		- Storytelling
+			- Internet Archive
+		- Collaborating Synchronously
+- Virtual
+	- Data Worlds
+	- Data Objects
+	- Analytical Immersion
